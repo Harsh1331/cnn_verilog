@@ -1,0 +1,15 @@
+# Ignore Vivado build and project files
+*.jou
+*.log
+*.str
+*.dcp
+*.bit
+*.hw
+*.sim/
+*.runs/
+*.cache/
+*.ip_user_files/
+# Keep only source directories
+!src/
+!sim/
+!scripts/
