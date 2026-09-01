@@ -14,7 +14,7 @@ def to_hex(val):
     return f"{q_val & 0xFFFF:04X}"
 
 if __name__ == "__main__":
-    with open("rom.hex", "w") as f:
+    with open("rom.mem", "w") as f:
         for r in range(rows):
             for c in range(cols):
                 f.write(f"{to_hex(image[r, c])}")
