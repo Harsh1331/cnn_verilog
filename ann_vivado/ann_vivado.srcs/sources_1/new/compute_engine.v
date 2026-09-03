@@ -160,9 +160,9 @@ module compute_engine #(
             //   -1  0  1
             //   -2  0  2
             //   -1  0  1
-            mac_ch1 <= (window[0][0]*W1N) + (window[0][2]*W1P) +
-                       (window[1][0]*W2N) + (window[1][2]*W2P) +
-                       (window[2][0]*W1N) + (window[2][2]*W1P);
+            mac_ch1 <= (window[0][0]*W1P) + (window[0][2]*W1N) +
+           			   (window[1][0]*W2P) + (window[1][2]*W2N) +
+           			   (window[2][0]*W1P) + (window[2][2]*W1N);
 
             // Gy: horizontal-edge kernel (top row negative, bottom row positive)
             //   -1 -2 -1
